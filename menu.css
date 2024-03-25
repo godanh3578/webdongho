@@ -1,0 +1,406 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+nav {
+    background-color: #00E8E4;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.logo img {
+    max-height: 100px;
+    margin-right: 1px;
+}
+
+nav ul {
+    font-size: 15px;
+}
+
+a:hover {
+    color: gold;
+}
+
+.bang {
+    position: relative;
+}
+
+.bangxuong {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 600px;
+    padding: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.bang:hover .bangxuong {
+    display: flex;
+}
+
+.cot {
+    width: 20%;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.cot h3 {
+    margin-top: 0;
+}
+
+.cot a {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+    padding: 5px 0;
+}
+
+.cot:last-child {
+    margin-right: 0;
+}
+
+.cot a:hover {
+    background-color: #f1f1f1;
+}
+
+.Thanhtimkiem {
+    display: flex;
+    align-items: center;
+}
+
+.Thanhtimkiem input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    width: 150px;
+}
+
+.Thanhtimkiem button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+}
+
+.giohang {
+    font-size: 14px;
+}
+
+.giohang img {
+    max-height: 30px;
+    vertical-align: middle;
+}
+
+.Thanhtimkiem input[type="text"],
+.giohang {
+    margin-left: 20px;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+}
+
+.slide {
+    display: flex;
+    flex: 1;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 16px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.dichvu {
+    width: 100%;
+    float: left;
+}
+
+.bangdichvu {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    clear: both;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+.phantu {
+    width: calc(20% - 10px); 
+    background: #fdaf17;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 20px; 
+    position: relative; 
+}
+
+.logohinhtuong {
+    width: 100%; 
+    position: relative;
+    height: 64px;
+}
+
+.ut-image {
+    width: 32px;
+    height: 32px;
+    margin: 14px 8px;
+}
+
+.logohinhtuong:after {
+    content: "";
+    display: inline-block;
+    background-color: #fdaf17;
+    width: 12px;
+    height: 64px;
+    border-radius: 100% / 50%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    position: absolute;
+    top: 0px;
+    right: -12px;
+}
+
+.giaithich {
+    width: calc(80% - 10px); 
+    background: #ecfbe5;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 5px 5px 20px;
+    border-radius: 0 8px 8px 0;
+    position: absolute; 
+    left: calc(20% + 10px); 
+    top: 0;
+}
+
+.giaithich h4 {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 0px;
+    height: 16px;
+    overflow: hidden;
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+.giaithich p {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    color: #666;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.Topdonghobanchay,
+.Topdongnambanchay,
+.Topdonghonubanchay {
+    text-align: center;
+    color: black;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.Topdonghobanchay img,
+.Topdongnambanchay img,
+.Topdonghonubanchay img {
+    width: 200px;
+    height: 200px;
+}
+
+.Topdonghobanchay,
+.Topdongnambanchay,
+.Topdonghonubanchay {
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 983px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.xemthem {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid blue;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 14px;
+    color: blue;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.xemthem:hover {
+    color: darkblue;
+}
+.kienthucdongho {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.tintuc {
+    border: 1px solid #ddd;
+    padding: 10px; 
+    border-radius: 3px; 
+    font-size: 14px; 
+}
+
+.daude {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bantin {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.anhtintuc {
+    grid-column: span 2;
+}
+
+.anhtintuc2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tin1,
+.tin2 {
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.img_th img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.ndtintuc {
+    padding: 10px;
+}
+
+.home_excerpt {
+    margin-top: 5px;
+}
+
+.xtc_vn {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.xtc_vn:hover {
+    text-decoration: underline;
+}
+
+.mangxahoi img {
+    width: 30px;
+    height: auto;
+}
+
+.ThongTinlienhe {
+    background-color: rgb(9, 212, 248);
+    max-width: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.ThongTinlienhe .footer-section {
+    display: inline;
+}
